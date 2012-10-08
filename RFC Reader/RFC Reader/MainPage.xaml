@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="RFC_Reader.MainPage"
+    IsTabStop="false"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RFC_Reader"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Grid HorizontalAlignment="Left" Height="680.597" Margin="-11.94,-11.94,0,98.94" Width="1367.94">
+            <TextBlock x:Name="TextBlock" Text="Welcome to RFC Reader" HorizontalAlignment="Left" Height="154.597" Margin="22.448,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="489.552" FontSize="64"/>
+            <TextBlock HorizontalAlignment="Left" Margin="22.448,170,0,0" TextWrapping="Wrap" Text="Enter four digit RFC document ID and select type of document" VerticalAlignment="Top" FontSize="21.333" Width="490"/>
+            <TextBox Height="45.134" HorizontalAlignment="Left" Margin="22.448,226,0,0" MaxLength="4" Name="textBox1" Text="1234" VerticalAlignment="Top" Width="128.194" FontSize="24" />
+            <Button Content="Get Doc" HorizontalAlignment="Left" Margin="173.193,226,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.229000002145767,-1.10399997234344" Height="45" Width="339.255" FontSize="24" Click="button1_Click"/>
+            <WebView Name="wv" HorizontalAlignment="Left" Height="767" Margin="517.448,10,0,-96" VerticalAlignment="Top" Width="850.552" />
+        </Grid>
+    </Grid>
+</Page>
